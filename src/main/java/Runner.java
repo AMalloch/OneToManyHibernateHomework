@@ -10,6 +10,9 @@ public class Runner {
         File file1 = new File("secret", "jpeg", 20, folder1);
         DBHelper.save(file1);
 
+        file1.setName("mega");
+        DBHelper.update(file1);
+
 //        String name, String extension, int size, Folder folder
 
     }
