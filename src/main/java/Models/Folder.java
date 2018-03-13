@@ -11,7 +11,7 @@ public class Folder {
     private String title;
     private Set<File> file;
 
-    public Folder(){
+    public Folder() {
     }
 
     public Folder(String title) {
