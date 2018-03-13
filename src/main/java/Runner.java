@@ -1,6 +1,8 @@
+import db.DBHelper;
 import models.File;
 import models.Folder;
-import db.DBHelper;
+
+import java.util.List;
 
 public class Runner {
 
@@ -10,10 +12,13 @@ public class Runner {
         File file1 = new File("secret", "jpeg", 20, folder1);
         DBHelper.save(file1);
 
+        File file2 = new File("happy", "png", 30, folder1);
+        DBHelper.save(file2);
+
+        List<File> fileList = DBHelper.getAll(File.class);
+
         file1.setName("mega");
         DBHelper.update(file1);
-
-//        String name, String extension, int size, Folder folder
 
     }
 }
