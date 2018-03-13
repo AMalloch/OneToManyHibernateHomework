@@ -14,9 +14,8 @@ public class Folder {
     public Folder(){
     }
 
-    public Folder(String title, Set<File> file) {
+    public Folder(String title) {
         this.title = title;
-        this.file = file;
     }
 
     @Id
