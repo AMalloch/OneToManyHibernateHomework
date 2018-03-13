@@ -26,5 +26,7 @@ public class Runner {
         file1.setName("mega");
         DBHelper.update(file1);
 
+        List<File> filesByFolder = DBHelper.getFilesByFolder(folder1);
+
     }
 }
