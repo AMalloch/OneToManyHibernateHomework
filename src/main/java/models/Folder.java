@@ -40,7 +40,7 @@ public class Folder {
         this.title = title;
     }
 
-    @OneToMany(mappedBy = "folder", fetch = FetchType.LAZY, orphanRemoval = true)
+    @OneToMany(mappedBy = "folder", fetch = FetchType.LAZY)
     public Set<File> getFile() {
         return file;
     }
