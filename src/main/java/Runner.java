@@ -10,6 +10,7 @@ public class Runner {
     public static void main(String[] args) {
 
         Owner owner1 = new Owner("Jim", "Turboman");
+        DBHelper.save(owner1);
 
         Folder folder1 = new Folder(owner1, "Thee Folder");
         DBHelper.save(folder1);
