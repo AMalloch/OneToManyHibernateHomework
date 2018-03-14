@@ -29,10 +29,10 @@ public class Runner {
 
         DBHelper.delete(file3);
 
-        List<File> fileList = DBHelper.getAll(File.class);
-
         file1.setName("mega");
         DBHelper.update(file1);
+
+        List<File> fileList = DBHelper.getAll(File.class);
 
         List<File> filesByFolder = DBHelper.getFilesByFolder(folder1);
 
